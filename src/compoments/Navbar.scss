@@ -1,0 +1,16 @@
+.Navbar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+
+    .NavbarContainer {
+        width: 50%;
+        padding: 20px 100px 0px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: #540B0E;
+    }
+}

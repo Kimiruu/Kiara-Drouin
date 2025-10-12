@@ -1,0 +1,22 @@
+.Home {
+    .Top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            p{
+                font-size: 40px;
+                color: #DB846B; 
+                font-weight: 600;
+            }
+        
+    }
+    .RecentProject {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .CarousselContianer {
+        padding-top: 40px;
+    }
+}

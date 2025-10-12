@@ -1,0 +1,31 @@
+.WorksContainer {
+    .buttonsContainer {
+        justify-content: center;
+        display: flex;
+        gap: 38px;
+        margin-bottom: 45px;
+        height: 2em;
+        button {  
+            color:#540B0E;
+            transition: 0.25s;
+            background: none;
+            border: none;
+            font: inherit;
+            cursor: pointer;
+            
+            &:hover,
+            &:focus { 
+              border-color: #540B0E;
+              color: #fff;
+            }
+          }
+        button:hover,
+        button:focus {
+            box-shadow: inset 6.5em 0 0 0 #540B0E;
+        }
+        .active {
+            background-color: #540B0E;
+            color: #fff;
+        }
+    }
+}

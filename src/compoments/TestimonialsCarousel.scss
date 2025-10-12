@@ -1,0 +1,92 @@
+$carousel-max-width: 800px;
+$dot-size: 10px;
+$transition-duration: 0.6s;
+
+.carousel-container {
+  width: 100%;
+  max-width: $carousel-max-width;
+  margin: 0 auto;
+  overflow: hidden; 
+  position: relative; 
+  text-align: center;
+
+  .carousel-wrapper {
+    display: flex;
+    transition: transform $transition-duration ease-in-out;
+    will-change: transform;
+
+
+    .carousel-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+
+      .carousel-portrait {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin: 10px 0 5px;
+
+        span {
+          font-weight: 300;
+          color: #888;
+          font-size: 1rem;
+          margin-left: 5px;
+        }
+      }
+
+      .carousel-testimony {
+        margin: 10px 0;
+      }
+
+      .linkedin-icon {
+        width: 25px;
+        height: 25px;
+        margin: 10px 0;
+      }
+
+      .endorsed-label {
+        font-weight: 600;
+        margin-top: 20px;
+      }
+
+      .endorsed-skills {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+  }
+
+
+  .carousel-buttons {
+    margin-top: 15px;
+
+    .carousel-dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin: 5px;
+        border: none;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        outline: none;
+        line-height: 0;
+
+      &:hover {
+        background-color: #999;
+      }
+
+      &.active {
+        background-color: #333;
+      }
+    }
+  }
+}

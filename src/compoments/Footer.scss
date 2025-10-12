@@ -1,0 +1,19 @@
+.Footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    .Bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+    .kirby {
+        height: 140px;
+        width: 140px;
+    }
+    a {
+        color: #540B0E;
+    }
+}

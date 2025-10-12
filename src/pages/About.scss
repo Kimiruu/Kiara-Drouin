@@ -1,0 +1,50 @@
+.About {
+    padding-top: 50px;
+}
+.PageContainer {
+    display: flex;
+    gap: 10px;
+    .InfoContainer {
+        width: 100%;
+        flex: 50%;
+        .ProfileImg {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .Subtitle {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 10px 0px 10px 0px;
+        }
+        .ButtonContainer {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+.QualificationContainer {
+    background-color: #F7D8CA;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 100%;
+    flex: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    //gap: 2rem; /* espace entre les colonnes */
+    margin: 2rem;
+    .education {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+    h2 {
+        margin: 0 0 10px 0;
+    }
+    ul {
+        margin: 0;
+    }
+}

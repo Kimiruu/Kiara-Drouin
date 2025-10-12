@@ -1,0 +1,101 @@
+/********************************
+ * Conteneur principal
+ ********************************/
+.ResumeWorks {
+  display: flex;
+  flex-direction: column; /* Les lignes sont empilées verticalement */
+  width: 100%;
+  gap: 20px; /* Espacement entre les lignes */
+
+  .row {
+    display: flex; /* Les projets dans une ligne sont alignés horizontalement */
+    gap: 20px; /* Espacement entre les projets */
+    height: 400px;
+
+    // Pattern 1 : première ligne => gauche: 40%, droite: 60%
+    &.row--pattern1 {
+      .project.left {
+        flex: 0.4;
+      }
+      .project.right {
+        flex: 0.6;
+      }
+    }
+
+    // Pattern 2 : seconde ligne => gauche: 60%, droite: 40%
+    &.row--pattern2 {
+      .project.left {
+        flex: 0.6;
+      }
+      .project.right {
+        flex: 0.4;
+      }
+    }
+
+    // Effet hover pour toute la ligne
+    &:hover {
+      .project {
+        &:hover {
+          flex: 0.8;
+        }
+        &:not(:hover) {
+          flex: 0.2;
+        }
+      }
+    }
+
+    .project.left:only-child {
+        flex: 1; 
+        &:hover {
+          flex: 1;
+        }
+      }
+
+    .project {
+      position: relative;
+      overflow: hidden;
+      transition: flex 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 30px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        p {
+          color: #fff;
+          font-size: 1.2rem;
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+          filter: brightness(0.8);
+        }
+
+        .overlay {
+          opacity: 1;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
