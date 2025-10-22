@@ -12,7 +12,7 @@ export default function ChromeExtension() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 7));
+      const q = query(collection(db, "Projects"), where("id", "==", 4));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();

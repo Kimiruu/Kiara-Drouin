@@ -12,7 +12,7 @@ export default function TheJollyHotChocolatier() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 5));
+      const q = query(collection(db, "Projects"), where("id", "==", 2));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();

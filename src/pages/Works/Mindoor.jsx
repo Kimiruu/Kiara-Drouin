@@ -12,7 +12,7 @@ export default function Mindoor() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 8));
+      const q = query(collection(db, "Projects"), where("id", "==", 10));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();

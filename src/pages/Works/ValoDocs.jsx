@@ -12,7 +12,7 @@ export default function ValoDocs() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 9));
+      const q = query(collection(db, "Projects"), where("id", "==", 3));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();

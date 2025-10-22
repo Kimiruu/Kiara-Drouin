@@ -12,7 +12,7 @@ export default function KittenRescue() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 6));
+      const q = query(collection(db, "Projects"), where("id", "==", 1));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();

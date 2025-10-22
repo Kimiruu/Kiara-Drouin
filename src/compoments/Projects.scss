@@ -80,3 +80,11 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .Projects {
+    height: auto;
+    flex-direction: column;
+  }
+
+}

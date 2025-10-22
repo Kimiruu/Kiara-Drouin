@@ -12,7 +12,7 @@ export default function CatBlender() {
   useEffect(() => {
     const fetchProject = async () => {
       const db = getFirestore();
-      const q = query(collection(db, "Projects"), where("id", "==", 11));
+      const q = query(collection(db, "Projects"), where("id", "==", 9));
       const querySnapshot = await getDocs(q);
       if (!querySnapshot.empty) {
         const data = querySnapshot.docs[0].data();
@@ -67,7 +67,7 @@ export default function CatBlender() {
           </div>
 
           <div className='full'> 
-            <video controls width={950}>
+            <video controls width="100%">
               <source src="/catAnim.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

@@ -77,3 +77,11 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .ProjectsInProgress {
+    height: auto;
+    flex-direction: column;
+  }
+
+}
