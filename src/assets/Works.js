@@ -15,6 +15,7 @@ export const projects = [
         img2: './LBN.jpg',
         img3: './LBN.jpg',
         whatILearned: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus, sit amet ipsum faucibus.',
+        navlink: '/works/ChromeExtension',
 
     },
     { 

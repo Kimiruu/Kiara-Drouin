@@ -4,7 +4,7 @@ import "./OpenPdfButton.scss"
 export default class OpenPdfButton extends Component {
     // Méthode de classe pour ouvrir le PDF
     openPdf = () => {
-      window.open('/mon_fichier.pdf', '_blank');
+      window.open('/CV_Kiara_Drouin.pdf', '_blank');
     }
   
     render() {

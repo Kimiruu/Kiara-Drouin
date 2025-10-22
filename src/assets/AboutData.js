@@ -63,6 +63,16 @@ export const ToolsData = [
         link: 'https://www.atlassian.com/software/jira',
     },
     {
+        name: 'github',
+        icon: '/assets/github.png',
+        link: 'https://github.com/',
+    },
+    {
+        name: 'blender',
+        icon: '/assets/blender.png',
+        link: 'https://www.blender.org/',
+    },
+    {
         name: 'monday',
         icon: '/assets/monday.png',
         link: 'https://monday.com/lang/fr',
@@ -73,11 +83,6 @@ export const ToolsData = [
         link: 'https://www.figma.com/',
     },
     {
-        name: 'github',
-        icon: '/assets/github.png',
-        link: 'https://github.com/',
-    },
-    {
         name: 'slack',
         icon: '/assets/slack.png',
         link: 'https://slack.com/intl/en-gb/',
@@ -85,16 +90,6 @@ export const ToolsData = [
 ];
 
 export const LearningData = [
-    {
-        name: 'blender',
-        icon: '/assets/blender.png',
-        link: 'https://www.blender.org/',
-    },
-    {
-        name: 'maya',
-        icon: '/assets/maya.png',
-        link: 'https://www.autodesk.com/',
-    },
     {
         name: 'C++',
         icon: '/assets/cplus.png',
@@ -106,18 +101,8 @@ export const LearningData = [
         link: 'https://www.php.net/',
     },
     {
-        name: 'ruby',
-        icon: '/assets/ruby.png',
-        link: 'https://www.ruby-lang.org/en/',
-    },
-    {
         name: 'c',
         icon: '/assets/c.png',
         link: 'https://www.w3schools.com/C/',
     },
-    {
-        name: 'php',
-        icon: '/assets/php.png',
-        link: 'https://www.php.net/',
-    }
 ];

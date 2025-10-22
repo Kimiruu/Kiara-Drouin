@@ -3,6 +3,8 @@ import './About.scss'
 import OpenPdfButton from '../compoments/OpenPdfButton'
 import SkillsIcon from '../compoments/SkillsIcon'
 import { SkillsData, ToolsData, LearningData } from '../assets/AboutData'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin , faGithub , faItchIo } from '@fortawesome/free-brands-svg-icons'
 
 export default class About extends Component {
   render() {
@@ -12,11 +14,22 @@ export default class About extends Component {
             <div className='InfoContainer'>
                 <img src="./profilepicture.JPEG" alt="moi" className='ProfileImg' />
                 <div className='DescriptionContainer'> 
-                    <p className='Subtitle'>Hello I'm Robyn.</p>
+                    <p className='Subtitle'>Hello I'm Kiara.</p>
                     <p className='Description'>I'm a game dev student based in Cannes and Paris. 
                       Passionate about create beautiful and meaningful games.
                     </p>
                     <div className='ButtonContainer'>
+                      <div className='IconContainer'>
+                        <a href="https://www.linkedin.com/in/kiara-drouin/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} className='icon' />
+                        </a>
+                        <a href="https://github.com/Kimiruu" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} className='icon' />
+                        </a>
+                        <a href="https://kimiru.itch.io/" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faItchIo} className='icon' />
+                        </a>
+                      </div>
                         <OpenPdfButton/>
                     </div>
                 </div>

@@ -20,7 +20,15 @@
         .ButtonContainer {
             margin-top: 10px;
             display: flex;
-            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            .IconContainer {
+                display: flex;
+                gap: 30px;
+                .icon {
+                    height: 25px;
+                }
+            }
         }
     }
 }
@@ -33,7 +41,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
-    //gap: 2rem; /* espace entre les colonnes */
     margin: 2rem;
     .education {
         display: flex;

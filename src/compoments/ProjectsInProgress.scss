@@ -1,0 +1,79 @@
+
+.ProjectsInProgress {
+  display: flex;            
+  width: 100%;
+  height: 300px;             
+  overflow: hidden;          
+  gap: 10px;                 
+
+  .project {
+    position: relative;        
+    overflow: hidden;          
+    transition: flex 0.3s ease;
+    text-decoration: none;     
+    color: inherit;            
+    border-radius: 30px;       
+
+    &:first-child {
+      flex: 0.6;
+    }
+
+    &:last-child {
+      flex: 0.4;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;               /* Remplit le bloc de manière esthétique */
+      transition: transform 0.3s ease, 
+                  filter 0.3s ease;
+    }
+
+    /********************************
+     * L'overlay (fond + texte)
+     ********************************/
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+      opacity: 0;               /* Caché par défaut */
+      transition: opacity 0.3s ease;
+
+      p {
+        color: #fff;              /* Texte blanc sur fond sombre */
+        font-size: 1.2rem;
+      }
+    }
+
+    /********************************
+     * EFFETS AU SURVOL
+     ********************************/
+    &:hover {
+      img {
+        transform: scale(1.1);    /* Zoom */
+        filter: brightness(0.8);  /* Assombrit légèrement l'image */
+      }
+
+      .overlay {
+        opacity: 1;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  &:hover {
+    .project {
+      &:hover {
+        flex: 0.8;
+      }
+
+      &:not(:hover) {
+        flex: 0.2;
+      }
+    }
+  }
+}

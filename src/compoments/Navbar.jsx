@@ -9,8 +9,6 @@ export default class Navbar extends Component {
             <div className='NavbarContainer'>
                 <AnimatedLink navlink="/" name='Home'/>
                 <AnimatedLink navlink="/works" name='Works'/>
-                <AnimatedLink navlink="/about" name='About'/>
-                <AnimatedLink navlink="#" name='Contact'/>
             </div>
         </div>
     )

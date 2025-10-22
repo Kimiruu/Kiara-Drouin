@@ -17,10 +17,10 @@ export default class ResumeWorks extends Component {
             {pair.map((project, index) => (
               <NavLink
                 key={project.id}
-                to={'/works/' + project.title.replace(" ", "")}
+                to={project.navlink}
                 className={`project ${index === 0 ? 'left' : 'right'}`}
               >
-                <img src={project.vigniette} alt={project.title} />
+                <img src={project.cover} alt={project.title} />
                 <div className="overlay">
                   <p>{project.title}</p>
                 </div>

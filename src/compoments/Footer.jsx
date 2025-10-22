@@ -9,10 +9,10 @@ export default class Footer extends Component {
         <div className='Bottom'>
             <p>Let's work together</p>
             <div>
-                <img className='kirby' src="./kirby.png" alt="kirby" />
+                <img className='kirby' src="/kirby.png" alt="kirby" />
             </div>
             <div>
-            <AnimatedLink href="https://login.univ-cotedazur.fr/login" name='email@email.com'/>
+            <AnimatedLink href="#" name='email@email.com'/>
             </div>
             <p>Code with ❤️ by me</p>
         </div>
