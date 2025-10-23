@@ -1,24 +1,23 @@
 .animated-link {
     position: relative;
     text-decoration: none;
-    /* Optionnel : ajustez la police, taille, etc. */
   }
   
   .animated-link::after {
     content: "";
     position: absolute;
-    left: 50%;             /* On positionne l’élément au centre horizontalement */
-    bottom: 0;             /* Positionné en bas du texte */
-    width: 100%;           /* Même largeur que le lien */
-    height: 2px;           /* Épaisseur du soulignement */
-    background-color: currentColor;  /* Utilise la même couleur que le lien */
+    left: 50%;             
+    bottom: 0;             
+    width: 100%;          
+    height: 2px;           
+    background-color: currentColor;  
     
-    transform: translateX(-50%) scaleX(0); /* Réduit l'élément à zéro depuis le centre */
-    transform-origin: center;             /* L'animation part du centre */
+    transform: translateX(-50%) scaleX(0); 
+    transform-origin: center;             
     
-    transition: transform 0.3s ease;      /* Durée et type d'animation */
+    transition: transform 0.3s ease;      
   }
   
   .animated-link:hover::after {
-    transform: translateX(-50%) scaleX(1); /* Le soulignement s'étend sur toute la largeur */
+    transform: translateX(-50%) scaleX(1); 
   }
